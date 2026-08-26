@@ -24,18 +24,22 @@
   .pillars-head{ max-width:560px; margin-bottom:80px; }
   .pillars-head h2{ font-size:34px; font-weight:300; line-height:1.25; margin:0; }
   .pillars-head h2 b{ font-weight:600; }
-  .pillars .grid{ padding:0; }
-  .pillars .tile:nth-child(2){ margin-top:64px; }
-  .pillars .tile:nth-child(3){ margin-top:22px; }
+  .pillars .grid{ padding:0; grid-template-columns:repeat(4,1fr); gap:24px; }
+  .pillars .tile:nth-child(2), .pillars .tile:nth-child(4){ margin-top:40px; }
   .pillars .tile-visual{ height:360px; }
   .pillars .tile-cap .desc{ max-width:280px; }
 
+  @media (max-width:1100px){
+    .pillars .grid{ grid-template-columns:repeat(2,1fr); }
+    .pillars .tile:nth-child(3){ margin-top:0; }
+  }
   @media (max-width:900px){
     .hero h1{ font-size:42px; }
     .orb{ width:180px; height:180px; right:24px; top:24px; }
     .pillars{ padding:60px 24px; }
     .pillars-head{ margin-bottom:40px; }
-    .pillars .tile:nth-child(2), .pillars .tile:nth-child(3){ margin-top:0; }
+    .pillars .grid{ grid-template-columns:1fr; }
+    .pillars .tile:nth-child(2), .pillars .tile:nth-child(3), .pillars .tile:nth-child(4){ margin-top:0; }
   }
 </style>
 </head>
@@ -47,6 +51,7 @@
     <a href="playbook.html">playbook</a>
     <a href="lasso-lessons.html">lasso lessons</a>
     <a href="templates.html">templates</a>
+    <a href="career-advice.html">career advice</a>
     <a href="#">ai hub</a>
     <a href="about.html">about</a>
   </div>
@@ -109,6 +114,20 @@
       <div class="tile-cap">
         <div class="title">Templates <span class="dot">•</span> Copy & go</div>
         <div class="desc">Real scripts for 1:1s, reviews, and hard conversations. Free — no toolkit paywall.</div>
+      </div>
+    </a>
+    <a class="tile" href="career-advice.html">
+      <div class="tile-visual cv6">
+        <svg class="icon-bg" viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20v-3"/></svg>
+        <div class="tile-index"><span>04 / CAREER ADVICE</span><span class="read">Read →</span></div>
+        <div>
+          <div class="tile-big">For you, too</div>
+          <div class="tile-sub">Not just your team's career — yours</div>
+        </div>
+      </div>
+      <div class="tile-cap">
+        <div class="title">Career Advice <span class="dot">•</span> Play the long game</div>
+        <div class="desc">Negotiating, knowing when to leave, managing up — the moves for your own career.</div>
       </div>
     </a>
   </div>
