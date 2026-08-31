@@ -294,6 +294,36 @@ main.article p.lead{ font-size:19px; font-weight:300; color:#fff; line-height:1.
 
 @media (max-width:900px){ .ask{ margin:60px 0 0; padding:60px 24px; } }
 
+/* ---------- TOPIC FINDER (situations.html) ---------- */
+.finder-search{ padding:0 56px 50px; max-width:640px; }
+.finder-search input{
+  width:100%; background:var(--bg2); border:1px solid rgba(237,235,228,.18); border-radius:2px;
+  padding:16px 18px; color:var(--text); font-family:inherit; font-size:16px;
+}
+.finder-search input:focus{ outline:none; border-color:var(--gold); }
+.finder-search .count{ font-size:12px; color:var(--muted); margin-top:10px; }
+
+.finder{ padding:0 56px 130px; max-width:900px; }
+.topic-group{ margin-bottom:52px; }
+.topic-group:last-child{ margin-bottom:0; }
+.topic-group-title{ font-size:12px; text-transform:uppercase; letter-spacing:.1em; color:var(--gold); font-weight:600; padding-bottom:14px; margin-bottom:4px; border-bottom:1px solid rgba(237,235,228,.15); }
+.topic-row{
+  display:flex; justify-content:space-between; align-items:center; gap:24px;
+  padding:16px 0; border-bottom:1px solid rgba(237,235,228,.08); transition:padding-left .12s ease;
+}
+.topic-row:last-child{ border-bottom:none; }
+.topic-row:hover{ padding-left:8px; }
+.topic-row .info{ min-width:0; }
+.topic-row .title{ font-size:15px; font-weight:600; color:var(--text); }
+.topic-row .desc{ font-size:13px; color:var(--muted); margin-top:3px; }
+.topic-row .go{ flex-shrink:0; color:var(--gold); font-size:13px; font-weight:600; white-space:nowrap; }
+.finder-empty{ display:none; color:var(--muted); font-size:14px; padding:20px 0; }
+
+@media (max-width:900px){
+  .finder-search, .finder{ padding-left:24px; padding-right:24px; }
+  .topic-row .desc{ display:none; }
+}
+
 /* ---------- FOOTER ---------- */
 footer{ display:flex; justify-content:space-between; padding:34px 56px; font-size:12px; color:var(--muted); border-top:1px solid rgba(237,235,228,.08); flex-wrap:wrap; gap:8px; }
 
