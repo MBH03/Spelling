@@ -241,6 +241,14 @@ main.article p.lead{ font-size:19px; font-weight:300; color:#fff; line-height:1.
 .try-label{ font-size:11px; text-transform:uppercase; letter-spacing:.1em; color:var(--gold); font-weight:600; margin-bottom:14px; }
 .try-block p{ margin-bottom:0; font-size:15px; color:var(--text); }
 
+.pull-quote{ margin:40px 0; padding:4px 0 4px 26px; border-left:2px solid var(--gold); }
+.pull-quote p{ font-size:23px; font-weight:300; font-style:italic; color:#fff; line-height:1.45; margin:0; }
+
+@media (max-width:900px){
+  .pull-quote{ padding-left:18px; }
+  .pull-quote p{ font-size:19px; }
+}
+
 @media (max-width:900px){
   main.article{ padding:40px 24px; }
 }
